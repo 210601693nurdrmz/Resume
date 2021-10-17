@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.cv {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.cv .baslangic {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(31, 34, 43);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.baslangic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 55px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgb(90, 84, 84);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(100%);
+}
+
+.baslangic img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+}
+
+.hakkinda {
+    color: white;
+    width: 60%;
+    margin-left: auto;
+}
+
+.hakkinda h1 {
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.hakkinda p {
+    font-size: 20px;
+    color: lightgray;
+}
+
+.icerik {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sol {
+    width: 30%;
+    background-color: rgb(202, 199, 199);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sol .iletisim {
+    margin-top: 130px;
+    padding: 0 30px;
+}
+
+.iletisim h4 {
+    font-size: 35px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+.iletisim h5 {
+    font-size: 18px;
+}
+
+.iletisim p {
+    font-size: 17px;
+}
+
+.sertifka {
+    margin-top: 20px;
+}
+
+.sertifka h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.bars {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    padding: 0 20px;
+}
+
+.bars .bar p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bar span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: gray;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar span::before {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.linkler h1 {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.linkler h5 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.linkler a {
+    font-size: 15px;
+    color: gray;
+}
+
+.sag {
+    width: 70%;
+    padding: 50px;
+    padding-bottom: 20px;
+}
+
+.sag h1 {
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.sag h1 span {
+    margin-right: 30px;
+    font-size: 50px;
+    color: lightgray;
+}
+
+.sag p {
+    padding-left: 70px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    color: gray;
+    margin-top: 10px;
+}
+
+.isler {
+    margin: 20px 0;
+}
+
+.tecrube .isler {
+    position: relative;
+}
+
+.isler h4 {
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 70px;
+}
+
+.isler span {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.egitim {
+    margin-top: 30px;
+}
+
+.egitim-grup {
+    position: relative;
+    margin: 10px 0;
+}
+
+.egitim-grup h4 {
+    padding-left: 80px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.egitim-grup span {
+    position: absolute;
+    top: 10px;
+    right: 0%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.egitim-grup p {
+    padding-left: 80px;
+}
+
+.iletisim {
+    margin-top: 30px;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+
+.iletisim h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+input {
+    margin-top: 10px;
+    width: 40%;
+    border: none;
+    border-bottom: 2px solid #d5d5d5;
+    padding: 10px 15px;
+    font-weight: 50;
+}
+
+input:focus {
+    border-bottom: 2px solid #968f8f;
+}
+
+button {
+    width: 50%;
+    float: right;
+    padding: 5px 20px;
+    background-color: rgb(236, 231, 231);
+    border: none;
+    border-radius: 3px;
+    color: rgb(100, 124, 170);
+    font-weight: 20;
+}
+
+.odev {
+    margin-top: 30px;
+}
